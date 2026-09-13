@@ -239,6 +239,8 @@ h1, h2, h3, h4, h5, h6,
     display: none;
     width: 42px;
     height: 42px;
+    margin-left: 8px;
+    flex-shrink: 0;
     border: 1px solid var(--line);
     background: #fff;
     border-radius: 10px;
@@ -376,26 +378,17 @@ h1, h2, h3, h4, h5, h6,
     color: #fff;
     letter-spacing: -0.03em;
 }
-.swap-wrap { white-space: nowrap; }
 .word-swap {
-    display: inline-grid;
-    overflow: hidden;
-    height: 1.35em;
-    min-width: 9.5ch;
-    padding-right: .2em;
-    vertical-align: baseline;
     color: #F0C6E8;
+    white-space: nowrap;
 }
 .word-swap b {
-    grid-area: 1 / 1;
+    display: none;
     font-weight: 500;
     font-family: var(--font-display);
     font-style: italic;
-    opacity: 0;
-    transform: translateY(70%);
-    transition: opacity .5s var(--ease-out), transform .5s var(--ease-out);
 }
-.word-swap b.is-on { opacity: 1; transform: none; }
+.word-swap b.is-on { display: inline; }
 
 .marquee {
     overflow: hidden;
@@ -722,6 +715,54 @@ h1, h2, h3, h4, h5, h6,
 }
 .gallery a.is-hidden { display: none; }
 
+.archive-block {
+    padding: 8px 0 56px;
+    scroll-margin-top: 96px;
+}
+.archive-block.is-hidden { display: none; }
+.archive-head {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    align-items: end;
+    margin-bottom: 22px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+}
+.archive-head h2 {
+    font-size: clamp(1.7rem, 3vw, 2.25rem);
+    margin: 0;
+    font-weight: 500;
+}
+.archive-head p {
+    margin: 8px 0 0;
+    max-width: 36rem;
+    font-size: 0.98rem;
+}
+.archive-head .count {
+    font-size: 0.78rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-weight: 600;
+    white-space: nowrap;
+}
+.filters a {
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--ink-soft);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+.filters a:hover,
+.filters a.is-active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
 /* Testimonials */
 .quotes {
     display: grid;
@@ -770,22 +811,30 @@ h1, h2, h3, h4, h5, h6,
 
 /* Page hero */
 .page-hero {
-    padding: 88px 0 64px;
+    padding: 108px 0 72px;
     position: relative;
     overflow: hidden;
+    background:
+        radial-gradient(900px 520px at 100% -8%, rgba(166,50,155,.22), transparent 58%),
+        radial-gradient(640px 380px at 0% 110%, rgba(166,50,155,.08), transparent 55%),
+        var(--paper);
 }
 .page-hero::before {
     content: "";
     position: absolute;
-    width: 52vw;
-    height: 52vw;
-    right: -18vw;
-    top: -22vw;
-    background: radial-gradient(circle, rgba(166,50,155,.16), transparent 68%);
+    width: 48vw;
+    height: 48vw;
+    right: -16vw;
+    top: -20vw;
+    background: radial-gradient(circle, rgba(166,50,155,.14), transparent 68%);
     pointer-events: none;
 }
 .page-hero h1 {
-    font-size: clamp(2.6rem, 6vw, 4.4rem);
+    font-size: clamp(2.15rem, 4.6vw, 3.45rem);
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    max-width: 14ch;
+    line-height: 1.04;
     margin: 0 0 16px;
     max-width: 16ch;
 }
@@ -805,6 +854,7 @@ h1, h2, h3, h4, h5, h6,
     align-items: center;
     padding: 56px 0;
     border-top: 1px solid var(--line);
+    scroll-margin-top: 96px;
 }
 .space-row:nth-child(even) { grid-template-columns: 0.8fr 1.2fr; }
 .space-row:nth-child(even) .space-row-copy { order: -1; }
@@ -974,7 +1024,7 @@ h1, h2, h3, h4, h5, h6,
 .value h3 { margin: 0 0 8px; font-size: 1.3rem; }
 
 @media (max-width: 991.98px) {
-    .nav-toggle { display: flex; }
+    .nav-toggle { display: flex !important; }
     .site-nav {
         display: none;
         position: absolute;
@@ -998,7 +1048,8 @@ h1, h2, h3, h4, h5, h6,
     .space-row:nth-child(even) { grid-template-columns: 1fr; }
     .space-row:nth-child(even) .space-row-copy { order: 0; }
     .mosaic { grid-template-columns: 1fr 1fr; grid-auto-rows: 150px; }
-    .section-head { grid-template-columns: 1fr; }
+    .section-head,
+    .archive-head { grid-template-columns: 1fr; }
     .split-copy { padding: 36px 28px; }
     .hero { grid-template-columns: 1fr; }
     .hero-copy { margin-left: 0; width: min(1180px, calc(100% - 40px)); }

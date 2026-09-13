@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>Work — Laboratories we have built | Forjalab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="An archive of Forjalab laboratories, furniture, equipment, and campus rooms across Nigeria.">
-    <link href="img/logo1.png" rel="icon">
+    <meta name="description" content="A studio archive of Forjalab laboratories, ICT rooms, libraries, furniture, and campus spaces across Nigeria.">
+    <link rel="icon" href="img/logo1.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/logo1.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -35,24 +36,34 @@
 <section class="page-hero">
     <div class="wrap">
         <div class="crumb"><a href="index.html">Home</a> · Work</div>
-        <span class="kicker">The archive</span>
-        <h1>Every room we have already opened.</h1>
-        <p class="lede">Laboratories, ICT, libraries, kitchens, workshops, and the furniture that holds them. Filter by type, then open any photograph.</p>
+        <span class="kicker">Studio archive</span>
+        <h1>Rooms we have already opened.</h1>
+        <p class="lede">Not a folder of files — a record of laboratories, ICT rooms, libraries, and the furniture that holds them. Jump to a type, then open any photograph.</p>
     </div>
 </section>
 
 <section class="section" style="padding-top:0">
     <div class="wrap">
-        <div class="filters">
-            <button class="is-active" data-filter="*">All</button>
-            <button data-filter="science">Science labs</button>
-            <button data-filter="ict">ICT</button>
-            <button data-filter="library">Library</button>
-            <button data-filter="furniture">Furniture</button>
-            <button data-filter="equipment">Equipment</button>
-            <button data-filter="campus">Campus</button>
+        <div class="filters" id="archiveNav">
+            <button type="button" class="is-active" data-filter="*">All</button>
+            <button type="button" data-filter="science">Science labs</button>
+            <button type="button" data-filter="ict">ICT</button>
+            <button type="button" data-filter="library">Library</button>
+            <button type="button" data-filter="furniture">Furniture</button>
+            <button type="button" data-filter="equipment">Equipment</button>
+            <button type="button" data-filter="campus">Campus</button>
+            <button type="button" data-filter="studio">Studio</button>
         </div>
-        <div class="gallery">
+        <section class="archive-block" id="science" data-cat="science">
+            <header class="archive-head">
+                <div>
+                    <span class="kicker">01</span>
+                    <h2>Science laboratories</h2>
+                    <p>Chemistry, physics, biology, and the rooms we plan and renovate around them.</p>
+                </div>
+                <span class="count">45 photographs</span>
+            </header>
+            <div class="gallery">
                 <a href="img/spaces/chemistry.jpg" data-lightbox="work" data-title="Chemistry laboratory" data-cat="science">
                     <img src="img/spaces/chemistry.jpg" alt="Chemistry laboratory">
                     <figcaption>Chemistry laboratory</figcaption>
@@ -65,205 +76,13 @@
                     <img src="img/spaces/biology.jpg" alt="Biology laboratory">
                     <figcaption>Biology laboratory</figcaption>
                 </a>
-                <a href="img/spaces/ict.jpg" data-lightbox="work" data-title="ICT laboratory" data-cat="ict">
-                    <img src="img/spaces/ict.jpg" alt="ICT laboratory">
-                    <figcaption>ICT laboratory</figcaption>
-                </a>
-                <a href="img/spaces/ict-2.jpg" data-lightbox="work" data-title="ICT carrels" data-cat="ict">
-                    <img src="img/spaces/ict-2.jpg" alt="ICT carrels">
-                    <figcaption>ICT carrels</figcaption>
-                </a>
-                <a href="img/spaces/library.jpg" data-lightbox="work" data-title="Library study bays" data-cat="library">
-                    <img src="img/spaces/library.jpg" alt="Library study bays">
-                    <figcaption>Library study bays</figcaption>
-                </a>
-                <a href="img/spaces/library-2.jpg" data-lightbox="work" data-title="Library" data-cat="library">
-                    <img src="img/spaces/library-2.jpg" alt="Library">
-                    <figcaption>Library</figcaption>
-                </a>
-                <a href="img/spaces/home-economics.jpg" data-lightbox="work" data-title="Home economics kitchen" data-cat="campus">
-                    <img src="img/spaces/home-economics.jpg" alt="Home economics kitchen">
-                    <figcaption>Home economics kitchen</figcaption>
-                </a>
-                <a href="img/spaces/cafeteria.jpg" data-lightbox="work" data-title="School cafeteria" data-cat="campus">
-                    <img src="img/spaces/cafeteria.jpg" alt="School cafeteria">
-                    <figcaption>School cafeteria</figcaption>
-                </a>
                 <a href="img/spaces/basic-tech.jpg" data-lightbox="work" data-title="Basic technology workshop" data-cat="science">
                     <img src="img/spaces/basic-tech.jpg" alt="Basic technology workshop">
                     <figcaption>Basic technology workshop</figcaption>
                 </a>
-                <a href="img/spaces/drawing-table.jpg" data-lightbox="work" data-title="Adjustable drawing tables" data-cat="furniture">
-                    <img src="img/spaces/drawing-table.jpg" alt="Adjustable drawing tables">
-                    <figcaption>Adjustable drawing tables</figcaption>
-                </a>
-                <a href="img/spaces/drawing-table-2.jpg" data-lightbox="work" data-title="Drawing studio" data-cat="furniture">
-                    <img src="img/spaces/drawing-table-2.jpg" alt="Drawing studio">
-                    <figcaption>Drawing studio</figcaption>
-                </a>
-                <a href="img/int1.jpg" data-lightbox="work" data-title="Mobile lab table" data-cat="furniture">
-                    <img src="img/int1.jpg" alt="Mobile lab table">
-                    <figcaption>Mobile lab table</figcaption>
-                </a>
-                <a href="img/int2.jpg" data-lightbox="work" data-title="Laboratory furniture" data-cat="furniture">
-                    <img src="img/int2.jpg" alt="Laboratory furniture">
-                    <figcaption>Laboratory furniture</figcaption>
-                </a>
-                <a href="img/int3.jpg" data-lightbox="work" data-title="Lab planning" data-cat="science">
-                    <img src="img/int3.jpg" alt="Lab planning">
-                    <figcaption>Lab planning</figcaption>
-                </a>
-                <a href="img/int4.jpg" data-lightbox="work" data-title="Installed laboratory 4" data-cat="science">
-                    <img src="img/int4.jpg" alt="Installed laboratory 4">
-                    <figcaption>Installed laboratory 4</figcaption>
-                </a>
-                <a href="img/int5.jpg" data-lightbox="work" data-title="Installed laboratory 5" data-cat="science">
-                    <img src="img/int5.jpg" alt="Installed laboratory 5">
-                    <figcaption>Installed laboratory 5</figcaption>
-                </a>
-                <a href="img/int6.jpg" data-lightbox="work" data-title="Laboratory equipment" data-cat="equipment">
-                    <img src="img/int6.jpg" alt="Laboratory equipment">
-                    <figcaption>Laboratory equipment</figcaption>
-                </a>
-                <a href="img/int7.jpg" data-lightbox="work" data-title="Installed laboratory 7" data-cat="science">
-                    <img src="img/int7.jpg" alt="Installed laboratory 7">
-                    <figcaption>Installed laboratory 7</figcaption>
-                </a>
-                <a href="img/int8.jpg" data-lightbox="work" data-title="Installed laboratory 8" data-cat="science">
-                    <img src="img/int8.jpg" alt="Installed laboratory 8">
-                    <figcaption>Installed laboratory 8</figcaption>
-                </a>
-                <a href="img/int9.jpg" data-lightbox="work" data-title="Installed laboratory 9" data-cat="science">
-                    <img src="img/int9.jpg" alt="Installed laboratory 9">
-                    <figcaption>Installed laboratory 9</figcaption>
-                </a>
-                <a href="img/int10.jpg" data-lightbox="work" data-title="Furniture & fittings" data-cat="furniture">
-                    <img src="img/int10.jpg" alt="Furniture & fittings">
-                    <figcaption>Furniture & fittings</figcaption>
-                </a>
-                <a href="img/int11.jpg" data-lightbox="work" data-title="Laboratory equipment" data-cat="equipment">
-                    <img src="img/int11.jpg" alt="Laboratory equipment">
-                    <figcaption>Laboratory equipment</figcaption>
-                </a>
-                <a href="img/int12.jpg" data-lightbox="work" data-title="Installed laboratory 12" data-cat="science">
-                    <img src="img/int12.jpg" alt="Installed laboratory 12">
-                    <figcaption>Installed laboratory 12</figcaption>
-                </a>
-                <a href="img/int13.jpg" data-lightbox="work" data-title="Installed laboratory 13" data-cat="science">
-                    <img src="img/int13.jpg" alt="Installed laboratory 13">
-                    <figcaption>Installed laboratory 13</figcaption>
-                </a>
-                <a href="img/int14.jpg" data-lightbox="work" data-title="Computer tables" data-cat="ict">
-                    <img src="img/int14.jpg" alt="Computer tables">
-                    <figcaption>Computer tables</figcaption>
-                </a>
-                <a href="img/int15.jpg" data-lightbox="work" data-title="Computer laboratory" data-cat="ict">
-                    <img src="img/int15.jpg" alt="Computer laboratory">
-                    <figcaption>Computer laboratory</figcaption>
-                </a>
-                <a href="img/int16.jpg" data-lightbox="work" data-title="Lecture chairs" data-cat="furniture">
-                    <img src="img/int16.jpg" alt="Lecture chairs">
-                    <figcaption>Lecture chairs</figcaption>
-                </a>
-                <a href="img/int17.jpg" data-lightbox="work" data-title="Installed laboratory 17" data-cat="science">
-                    <img src="img/int17.jpg" alt="Installed laboratory 17">
-                    <figcaption>Installed laboratory 17</figcaption>
-                </a>
-                <a href="img/int18.jpg" data-lightbox="work" data-title="Installed laboratory 18" data-cat="science">
-                    <img src="img/int18.jpg" alt="Installed laboratory 18">
-                    <figcaption>Installed laboratory 18</figcaption>
-                </a>
-                <a href="img/int19.jpg" data-lightbox="work" data-title="Installed laboratory 19" data-cat="science">
-                    <img src="img/int19.jpg" alt="Installed laboratory 19">
-                    <figcaption>Installed laboratory 19</figcaption>
-                </a>
-                <a href="img/int20.jpg" data-lightbox="work" data-title="Installed laboratory 20" data-cat="science">
-                    <img src="img/int20.jpg" alt="Installed laboratory 20">
-                    <figcaption>Installed laboratory 20</figcaption>
-                </a>
-                <a href="img/int21.jpg" data-lightbox="work" data-title="Installed laboratory 21" data-cat="science">
-                    <img src="img/int21.jpg" alt="Installed laboratory 21">
-                    <figcaption>Installed laboratory 21</figcaption>
-                </a>
-                <a href="img/int22.jpg" data-lightbox="work" data-title="Kitchen cabinet" data-cat="campus">
-                    <img src="img/int22.jpg" alt="Kitchen cabinet">
-                    <figcaption>Kitchen cabinet</figcaption>
-                </a>
-                <a href="img/int23.jpg" data-lightbox="work" data-title="Wardrobes" data-cat="furniture">
-                    <img src="img/int23.jpg" alt="Wardrobes">
-                    <figcaption>Wardrobes</figcaption>
-                </a>
-                <a href="img/int24.jpg" data-lightbox="work" data-title="Installed laboratory 24" data-cat="science">
-                    <img src="img/int24.jpg" alt="Installed laboratory 24">
-                    <figcaption>Installed laboratory 24</figcaption>
-                </a>
-                <a href="img/int25.jpg" data-lightbox="work" data-title="Kitchen fittings" data-cat="campus">
-                    <img src="img/int25.jpg" alt="Kitchen fittings">
-                    <figcaption>Kitchen fittings</figcaption>
-                </a>
-                <a href="img/int26.jpg" data-lightbox="work" data-title="Installed laboratory 26" data-cat="science">
-                    <img src="img/int26.jpg" alt="Installed laboratory 26">
-                    <figcaption>Installed laboratory 26</figcaption>
-                </a>
-                <a href="img/int27.jpg" data-lightbox="work" data-title="Installed laboratory 27" data-cat="science">
-                    <img src="img/int27.jpg" alt="Installed laboratory 27">
-                    <figcaption>Installed laboratory 27</figcaption>
-                </a>
-                <a href="img/int28.jpg" data-lightbox="work" data-title="Installed laboratory 28" data-cat="science">
-                    <img src="img/int28.jpg" alt="Installed laboratory 28">
-                    <figcaption>Installed laboratory 28</figcaption>
-                </a>
-                <a href="img/int29.jpg" data-lightbox="work" data-title="Installed laboratory 29" data-cat="science">
-                    <img src="img/int29.jpg" alt="Installed laboratory 29">
-                    <figcaption>Installed laboratory 29</figcaption>
-                </a>
-                <a href="img/int30.jpg" data-lightbox="work" data-title="Installed laboratory 30" data-cat="science">
-                    <img src="img/int30.jpg" alt="Installed laboratory 30">
-                    <figcaption>Installed laboratory 30</figcaption>
-                </a>
-                <a href="img/int31.jpg" data-lightbox="work" data-title="Installed laboratory 31" data-cat="science">
-                    <img src="img/int31.jpg" alt="Installed laboratory 31">
-                    <figcaption>Installed laboratory 31</figcaption>
-                </a>
-                <a href="img/lab1.jpg" data-lightbox="work" data-title="Laboratory equipment 1" data-cat="equipment">
-                    <img src="img/lab1.jpg" alt="Laboratory equipment 1">
-                    <figcaption>Laboratory equipment 1</figcaption>
-                </a>
-                <a href="img/lab2.jpg" data-lightbox="work" data-title="Laboratory equipment 2" data-cat="equipment">
-                    <img src="img/lab2.jpg" alt="Laboratory equipment 2">
-                    <figcaption>Laboratory equipment 2</figcaption>
-                </a>
-                <a href="img/lab3.jpg" data-lightbox="work" data-title="Laboratory equipment 3" data-cat="equipment">
-                    <img src="img/lab3.jpg" alt="Laboratory equipment 3">
-                    <figcaption>Laboratory equipment 3</figcaption>
-                </a>
-                <a href="img/lab4.jpg" data-lightbox="work" data-title="Laboratory equipment 4" data-cat="equipment">
-                    <img src="img/lab4.jpg" alt="Laboratory equipment 4">
-                    <figcaption>Laboratory equipment 4</figcaption>
-                </a>
-                <a href="img/lab5.jpg" data-lightbox="work" data-title="Laboratory equipment 5" data-cat="equipment">
-                    <img src="img/lab5.jpg" alt="Laboratory equipment 5">
-                    <figcaption>Laboratory equipment 5</figcaption>
-                </a>
-                <a href="img/lab6.jpg" data-lightbox="work" data-title="Laboratory equipment 6" data-cat="equipment">
-                    <img src="img/lab6.jpg" alt="Laboratory equipment 6">
-                    <figcaption>Laboratory equipment 6</figcaption>
-                </a>
-                <a href="img/nbg1.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
-                    <img src="img/nbg1.jpg" alt="Laboratory interior">
-                    <figcaption>Laboratory interior</figcaption>
-                </a>
                 <a href="img/nbg2.jpg" data-lightbox="work" data-title="Science laboratory" data-cat="science">
                     <img src="img/nbg2.jpg" alt="Science laboratory">
                     <figcaption>Science laboratory</figcaption>
-                </a>
-                <a href="img/nbg3.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
-                    <img src="img/nbg3.jpg" alt="Laboratory interior">
-                    <figcaption>Laboratory interior</figcaption>
-                </a>
-                <a href="img/nbg4.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
-                    <img src="img/nbg4.jpg" alt="Laboratory interior">
-                    <figcaption>Laboratory interior</figcaption>
                 </a>
                 <a href="img/nbg5.webp" data-lightbox="work" data-title="Teaching laboratory" data-cat="science">
                     <img src="img/nbg5.webp" alt="Teaching laboratory">
@@ -280,6 +99,18 @@
                 <a href="img/nbg8.jpg" data-lightbox="work" data-title="Classroom laboratory" data-cat="science">
                     <img src="img/nbg8.jpg" alt="Classroom laboratory">
                     <figcaption>Classroom laboratory</figcaption>
+                </a>
+                <a href="img/nbg1.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
+                    <img src="img/nbg1.jpg" alt="Laboratory interior">
+                    <figcaption>Laboratory interior</figcaption>
+                </a>
+                <a href="img/nbg3.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
+                    <img src="img/nbg3.jpg" alt="Laboratory interior">
+                    <figcaption>Laboratory interior</figcaption>
+                </a>
+                <a href="img/nbg4.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
+                    <img src="img/nbg4.jpg" alt="Laboratory interior">
+                    <figcaption>Laboratory interior</figcaption>
                 </a>
                 <a href="img/nbg9.jpeg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
                     <img src="img/nbg9.jpeg" alt="Laboratory interior">
@@ -305,6 +136,86 @@
                     <img src="img/nbg14.jpg" alt="Laboratory interior">
                     <figcaption>Laboratory interior</figcaption>
                 </a>
+                <a href="img/int3.jpg" data-lightbox="work" data-title="Lab planning" data-cat="science">
+                    <img src="img/int3.jpg" alt="Lab planning">
+                    <figcaption>Lab planning</figcaption>
+                </a>
+                <a href="img/int4.jpg" data-lightbox="work" data-title="Installed laboratory 4" data-cat="science">
+                    <img src="img/int4.jpg" alt="Installed laboratory 4">
+                    <figcaption>Installed laboratory 4</figcaption>
+                </a>
+                <a href="img/int5.jpg" data-lightbox="work" data-title="Installed laboratory 5" data-cat="science">
+                    <img src="img/int5.jpg" alt="Installed laboratory 5">
+                    <figcaption>Installed laboratory 5</figcaption>
+                </a>
+                <a href="img/int7.jpg" data-lightbox="work" data-title="Installed laboratory 7" data-cat="science">
+                    <img src="img/int7.jpg" alt="Installed laboratory 7">
+                    <figcaption>Installed laboratory 7</figcaption>
+                </a>
+                <a href="img/int8.jpg" data-lightbox="work" data-title="Installed laboratory 8" data-cat="science">
+                    <img src="img/int8.jpg" alt="Installed laboratory 8">
+                    <figcaption>Installed laboratory 8</figcaption>
+                </a>
+                <a href="img/int9.jpg" data-lightbox="work" data-title="Installed laboratory 9" data-cat="science">
+                    <img src="img/int9.jpg" alt="Installed laboratory 9">
+                    <figcaption>Installed laboratory 9</figcaption>
+                </a>
+                <a href="img/int12.jpg" data-lightbox="work" data-title="Installed laboratory 12" data-cat="science">
+                    <img src="img/int12.jpg" alt="Installed laboratory 12">
+                    <figcaption>Installed laboratory 12</figcaption>
+                </a>
+                <a href="img/int13.jpg" data-lightbox="work" data-title="Installed laboratory 13" data-cat="science">
+                    <img src="img/int13.jpg" alt="Installed laboratory 13">
+                    <figcaption>Installed laboratory 13</figcaption>
+                </a>
+                <a href="img/int17.jpg" data-lightbox="work" data-title="Installed laboratory 17" data-cat="science">
+                    <img src="img/int17.jpg" alt="Installed laboratory 17">
+                    <figcaption>Installed laboratory 17</figcaption>
+                </a>
+                <a href="img/int18.jpg" data-lightbox="work" data-title="Installed laboratory 18" data-cat="science">
+                    <img src="img/int18.jpg" alt="Installed laboratory 18">
+                    <figcaption>Installed laboratory 18</figcaption>
+                </a>
+                <a href="img/int19.jpg" data-lightbox="work" data-title="Installed laboratory 19" data-cat="science">
+                    <img src="img/int19.jpg" alt="Installed laboratory 19">
+                    <figcaption>Installed laboratory 19</figcaption>
+                </a>
+                <a href="img/int20.jpg" data-lightbox="work" data-title="Installed laboratory 20" data-cat="science">
+                    <img src="img/int20.jpg" alt="Installed laboratory 20">
+                    <figcaption>Installed laboratory 20</figcaption>
+                </a>
+                <a href="img/int21.jpg" data-lightbox="work" data-title="Installed laboratory 21" data-cat="science">
+                    <img src="img/int21.jpg" alt="Installed laboratory 21">
+                    <figcaption>Installed laboratory 21</figcaption>
+                </a>
+                <a href="img/int24.jpg" data-lightbox="work" data-title="Installed laboratory 24" data-cat="science">
+                    <img src="img/int24.jpg" alt="Installed laboratory 24">
+                    <figcaption>Installed laboratory 24</figcaption>
+                </a>
+                <a href="img/int26.jpg" data-lightbox="work" data-title="Installed laboratory 26" data-cat="science">
+                    <img src="img/int26.jpg" alt="Installed laboratory 26">
+                    <figcaption>Installed laboratory 26</figcaption>
+                </a>
+                <a href="img/int27.jpg" data-lightbox="work" data-title="Installed laboratory 27" data-cat="science">
+                    <img src="img/int27.jpg" alt="Installed laboratory 27">
+                    <figcaption>Installed laboratory 27</figcaption>
+                </a>
+                <a href="img/int28.jpg" data-lightbox="work" data-title="Installed laboratory 28" data-cat="science">
+                    <img src="img/int28.jpg" alt="Installed laboratory 28">
+                    <figcaption>Installed laboratory 28</figcaption>
+                </a>
+                <a href="img/int29.jpg" data-lightbox="work" data-title="Installed laboratory 29" data-cat="science">
+                    <img src="img/int29.jpg" alt="Installed laboratory 29">
+                    <figcaption>Installed laboratory 29</figcaption>
+                </a>
+                <a href="img/int30.jpg" data-lightbox="work" data-title="Installed laboratory 30" data-cat="science">
+                    <img src="img/int30.jpg" alt="Installed laboratory 30">
+                    <figcaption>Installed laboratory 30</figcaption>
+                </a>
+                <a href="img/int31.jpg" data-lightbox="work" data-title="Installed laboratory 31" data-cat="science">
+                    <img src="img/int31.jpg" alt="Installed laboratory 31">
+                    <figcaption>Installed laboratory 31</figcaption>
+                </a>
                 <a href="img/portfolio-1.jpg" data-lightbox="work" data-title="Project 1" data-cat="science">
                     <img src="img/portfolio-1.jpg" alt="Project 1">
                     <figcaption>Project 1</figcaption>
@@ -328,6 +239,106 @@
                 <a href="img/portfolio-6.jpg" data-lightbox="work" data-title="Project 6" data-cat="science">
                     <img src="img/portfolio-6.jpg" alt="Project 6">
                     <figcaption>Project 6</figcaption>
+                </a>
+                <a href="img/quote.jpg" data-lightbox="work" data-title="Planning" data-cat="science">
+                    <img src="img/quote.jpg" alt="Planning">
+                    <figcaption>Planning</figcaption>
+                </a>
+            </div>
+        </section>
+        <section class="archive-block" id="ict" data-cat="ict">
+            <header class="archive-head">
+                <div>
+                    <span class="kicker">02</span>
+                    <h2>ICT laboratories</h2>
+                    <p>Carrels, computer tables, and rooms where every screen can be seen.</p>
+                </div>
+                <span class="count">4 photographs</span>
+            </header>
+            <div class="gallery">
+                <a href="img/spaces/ict.jpg" data-lightbox="work" data-title="ICT laboratory" data-cat="ict">
+                    <img src="img/spaces/ict.jpg" alt="ICT laboratory">
+                    <figcaption>ICT laboratory</figcaption>
+                </a>
+                <a href="img/spaces/ict-2.jpg" data-lightbox="work" data-title="ICT carrels" data-cat="ict">
+                    <img src="img/spaces/ict-2.jpg" alt="ICT carrels">
+                    <figcaption>ICT carrels</figcaption>
+                </a>
+                <a href="img/int14.jpg" data-lightbox="work" data-title="Computer tables" data-cat="ict">
+                    <img src="img/int14.jpg" alt="Computer tables">
+                    <figcaption>Computer tables</figcaption>
+                </a>
+                <a href="img/int15.jpg" data-lightbox="work" data-title="Computer laboratory" data-cat="ict">
+                    <img src="img/int15.jpg" alt="Computer laboratory">
+                    <figcaption>Computer laboratory</figcaption>
+                </a>
+            </div>
+        </section>
+        <section class="archive-block" id="library" data-cat="library">
+            <header class="archive-head">
+                <div>
+                    <span class="kicker">03</span>
+                    <h2>Libraries</h2>
+                    <p>Study bays and shelving that actually hold books.</p>
+                </div>
+                <span class="count">2 photographs</span>
+            </header>
+            <div class="gallery">
+                <a href="img/spaces/library.jpg" data-lightbox="work" data-title="Library study bays" data-cat="library">
+                    <img src="img/spaces/library.jpg" alt="Library study bays">
+                    <figcaption>Library study bays</figcaption>
+                </a>
+                <a href="img/spaces/library-2.jpg" data-lightbox="work" data-title="Library" data-cat="library">
+                    <img src="img/spaces/library-2.jpg" alt="Library">
+                    <figcaption>Library</figcaption>
+                </a>
+            </div>
+        </section>
+        <section class="archive-block" id="furniture" data-cat="furniture">
+            <header class="archive-head">
+                <div>
+                    <span class="kicker">04</span>
+                    <h2>Furniture & fittings</h2>
+                    <p>Benches, chairs, cabinets, drawing tables — the pieces the room is made of.</p>
+                </div>
+                <span class="count">15 photographs</span>
+            </header>
+            <div class="gallery">
+                <a href="img/int1.jpg" data-lightbox="work" data-title="Mobile lab table" data-cat="furniture">
+                    <img src="img/int1.jpg" alt="Mobile lab table">
+                    <figcaption>Mobile lab table</figcaption>
+                </a>
+                <a href="img/int2.jpg" data-lightbox="work" data-title="Laboratory furniture" data-cat="furniture">
+                    <img src="img/int2.jpg" alt="Laboratory furniture">
+                    <figcaption>Laboratory furniture</figcaption>
+                </a>
+                <a href="img/int10.jpg" data-lightbox="work" data-title="Furniture & fittings" data-cat="furniture">
+                    <img src="img/int10.jpg" alt="Furniture & fittings">
+                    <figcaption>Furniture & fittings</figcaption>
+                </a>
+                <a href="img/int16.jpg" data-lightbox="work" data-title="Lecture chairs" data-cat="furniture">
+                    <img src="img/int16.jpg" alt="Lecture chairs">
+                    <figcaption>Lecture chairs</figcaption>
+                </a>
+                <a href="img/int23.jpg" data-lightbox="work" data-title="Wardrobes" data-cat="furniture">
+                    <img src="img/int23.jpg" alt="Wardrobes">
+                    <figcaption>Wardrobes</figcaption>
+                </a>
+                <a href="img/spaces/drawing-table.jpg" data-lightbox="work" data-title="Adjustable drawing tables" data-cat="furniture">
+                    <img src="img/spaces/drawing-table.jpg" alt="Adjustable drawing tables">
+                    <figcaption>Adjustable drawing tables</figcaption>
+                </a>
+                <a href="img/spaces/drawing-table-2.jpg" data-lightbox="work" data-title="Drawing studio" data-cat="furniture">
+                    <img src="img/spaces/drawing-table-2.jpg" alt="Drawing studio">
+                    <figcaption>Drawing studio</figcaption>
+                </a>
+                <a href="img/about.jpg" data-lightbox="work" data-title="Workshop" data-cat="furniture">
+                    <img src="img/about.jpg" alt="Workshop">
+                    <figcaption>Workshop</figcaption>
+                </a>
+                <a href="img/feature.jpg" data-lightbox="work" data-title="Craft detail" data-cat="furniture">
+                    <img src="img/feature.jpg" alt="Craft detail">
+                    <figcaption>Craft detail</figcaption>
                 </a>
                 <a href="img/service-1.jpg" data-lightbox="work" data-title="Workshop 1" data-cat="furniture">
                     <img src="img/service-1.jpg" alt="Workshop 1">
@@ -353,6 +364,82 @@
                     <img src="img/service-6.jpg" alt="Workshop 6">
                     <figcaption>Workshop 6</figcaption>
                 </a>
+            </div>
+        </section>
+        <section class="archive-block" id="equipment" data-cat="equipment">
+            <header class="archive-head">
+                <div>
+                    <span class="kicker">05</span>
+                    <h2>Equipment</h2>
+                    <p>Apparatus, glassware, and the kit that turns furniture into a laboratory.</p>
+                </div>
+                <span class="count">9 photographs</span>
+            </header>
+            <div class="gallery">
+                <a href="img/int6.jpg" data-lightbox="work" data-title="Laboratory equipment" data-cat="equipment">
+                    <img src="img/int6.jpg" alt="Laboratory equipment">
+                    <figcaption>Laboratory equipment</figcaption>
+                </a>
+                <a href="img/int11.jpg" data-lightbox="work" data-title="Laboratory equipment" data-cat="equipment">
+                    <img src="img/int11.jpg" alt="Laboratory equipment">
+                    <figcaption>Laboratory equipment</figcaption>
+                </a>
+                <a href="img/lab1.jpg" data-lightbox="work" data-title="Laboratory equipment 1" data-cat="equipment">
+                    <img src="img/lab1.jpg" alt="Laboratory equipment 1">
+                    <figcaption>Laboratory equipment 1</figcaption>
+                </a>
+                <a href="img/lab2.jpg" data-lightbox="work" data-title="Laboratory equipment 2" data-cat="equipment">
+                    <img src="img/lab2.jpg" alt="Laboratory equipment 2">
+                    <figcaption>Laboratory equipment 2</figcaption>
+                </a>
+                <a href="img/lab3.jpg" data-lightbox="work" data-title="Laboratory equipment 3" data-cat="equipment">
+                    <img src="img/lab3.jpg" alt="Laboratory equipment 3">
+                    <figcaption>Laboratory equipment 3</figcaption>
+                </a>
+                <a href="img/lab4.jpg" data-lightbox="work" data-title="Laboratory equipment 4" data-cat="equipment">
+                    <img src="img/lab4.jpg" alt="Laboratory equipment 4">
+                    <figcaption>Laboratory equipment 4</figcaption>
+                </a>
+                <a href="img/lab5.jpg" data-lightbox="work" data-title="Laboratory equipment 5" data-cat="equipment">
+                    <img src="img/lab5.jpg" alt="Laboratory equipment 5">
+                    <figcaption>Laboratory equipment 5</figcaption>
+                </a>
+                <a href="img/lab6.jpg" data-lightbox="work" data-title="Laboratory equipment 6" data-cat="equipment">
+                    <img src="img/lab6.jpg" alt="Laboratory equipment 6">
+                    <figcaption>Laboratory equipment 6</figcaption>
+                </a>
+                <a href="img/glass1.jpg" data-lightbox="work" data-title="Lab glassware" data-cat="equipment">
+                    <img src="img/glass1.jpg" alt="Lab glassware">
+                    <figcaption>Lab glassware</figcaption>
+                </a>
+            </div>
+        </section>
+        <section class="archive-block" id="campus" data-cat="campus">
+            <header class="archive-head">
+                <div>
+                    <span class="kicker">06</span>
+                    <h2>Campus rooms</h2>
+                    <p>Home economics, cafeteria, and the rest of the school around the lab.</p>
+                </div>
+                <span class="count">8 photographs</span>
+            </header>
+            <div class="gallery">
+                <a href="img/spaces/home-economics.jpg" data-lightbox="work" data-title="Home economics kitchen" data-cat="campus">
+                    <img src="img/spaces/home-economics.jpg" alt="Home economics kitchen">
+                    <figcaption>Home economics kitchen</figcaption>
+                </a>
+                <a href="img/spaces/cafeteria.jpg" data-lightbox="work" data-title="School cafeteria" data-cat="campus">
+                    <img src="img/spaces/cafeteria.jpg" alt="School cafeteria">
+                    <figcaption>School cafeteria</figcaption>
+                </a>
+                <a href="img/int22.jpg" data-lightbox="work" data-title="Kitchen cabinet" data-cat="campus">
+                    <img src="img/int22.jpg" alt="Kitchen cabinet">
+                    <figcaption>Kitchen cabinet</figcaption>
+                </a>
+                <a href="img/int25.jpg" data-lightbox="work" data-title="Kitchen fittings" data-cat="campus">
+                    <img src="img/int25.jpg" alt="Kitchen fittings">
+                    <figcaption>Kitchen fittings</figcaption>
+                </a>
                 <a href="img/carousel-1.jpg" data-lightbox="work" data-title="Campus 1" data-cat="campus">
                     <img src="img/carousel-1.jpg" alt="Campus 1">
                     <figcaption>Campus 1</figcaption>
@@ -365,26 +452,22 @@
                     <img src="img/carousel-3.jpg" alt="Campus 3">
                     <figcaption>Campus 3</figcaption>
                 </a>
-                <a href="img/glass1.jpg" data-lightbox="work" data-title="Lab glassware" data-cat="equipment">
-                    <img src="img/glass1.jpg" alt="Lab glassware">
-                    <figcaption>Lab glassware</figcaption>
-                </a>
-                <a href="img/about.jpg" data-lightbox="work" data-title="Workshop" data-cat="furniture">
-                    <img src="img/about.jpg" alt="Workshop">
-                    <figcaption>Workshop</figcaption>
-                </a>
-                <a href="img/feature.jpg" data-lightbox="work" data-title="Craft detail" data-cat="furniture">
-                    <img src="img/feature.jpg" alt="Craft detail">
-                    <figcaption>Craft detail</figcaption>
-                </a>
-                <a href="img/quote.jpg" data-lightbox="work" data-title="Planning" data-cat="science">
-                    <img src="img/quote.jpg" alt="Planning">
-                    <figcaption>Planning</figcaption>
-                </a>
                 <a href="img/footer.jpg" data-lightbox="work" data-title="Campus" data-cat="campus">
                     <img src="img/footer.jpg" alt="Campus">
                     <figcaption>Campus</figcaption>
                 </a>
+            </div>
+        </section>
+        <section class="archive-block" id="studio" data-cat="studio">
+            <header class="archive-head">
+                <div>
+                    <span class="kicker">07</span>
+                    <h2>Studio</h2>
+                    <p>The people and the workshop behind the rooms.</p>
+                </div>
+                <span class="count">8 photographs</span>
+            </header>
+            <div class="gallery">
                 <a href="img/team-1.jpg" data-lightbox="work" data-title="Studio" data-cat="campus">
                     <img src="img/team-1.jpg" alt="Studio">
                     <figcaption>Studio</figcaption>
@@ -417,7 +500,8 @@
                     <img src="img/testimonial-4.jpg" alt="People of science">
                     <figcaption>People of science</figcaption>
                 </a>
-        </div>
+            </div>
+        </section>
     </div>
 </section>
 
@@ -433,7 +517,7 @@
     <div class="wrap footer-grid">
         <div>
             <a class="brand" href="index.html"><img src="img/logo1.png" alt=""><span>Forjalab</span></a>
-            <p>Indigenous laboratory studio in Lagos. We design, manufacture, and install science spaces for schools across Nigeria.</p>
+            <p>Laboratory studio in Lagos and Kano. We design, manufacture, and install science spaces for schools across Nigeria.</p>
         </div>
         <div>
             <h4>Spaces</h4>
@@ -455,7 +539,8 @@
         </div>
         <div>
             <h4>Visit</h4>
-            <p>No 69 Lagos Road, Ikorodu, Lagos<br>Mon–Sat, 09:00–21:00</p>
+            <p>Lagos: 23 ASC, 156 Lagos Road, opp. St. Augustine Catholic Church, Ikorodu<br>
+            Kano: 32 Ibn Auwal Plaza, opp. BUK Newsite, Gwarzo Road</p>
             <p><a href="tel:+2349157545966">+234 915 754 5966</a><br>
             <a href="mailto:sales.forjalabtech@gmail.com">sales.forjalabtech@gmail.com</a></p>
         </div>

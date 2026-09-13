@@ -71,7 +71,19 @@
         var filter = $(this).data("filter");
         $(".filters button").removeClass("is-active");
         $(this).addClass("is-active");
-        if (filter === "*") {
+        if ($(".archive-block").length) {
+            if (filter === "*") {
+                $(".archive-block").removeClass("is-hidden");
+            } else {
+                $(".archive-block").each(function () {
+                    $(this).toggleClass("is-hidden", $(this).data("cat") !== filter);
+                });
+                var $target = $(".archive-block[data-cat='" + filter + "']");
+                if ($target.length) {
+                    $("html, body").animate({ scrollTop: Math.max(0, $target.offset().top - 88) }, 450);
+                }
+            }
+        } else if (filter === "*") {
             $(".gallery a").removeClass("is-hidden");
         } else {
             $(".gallery a").each(function () {
