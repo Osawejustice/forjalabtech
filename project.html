@@ -1,313 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <title>Forjalab - Carpenter Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
+    <title>Work — Laboratories we have built | Forjalab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An archive of Forjalab laboratories, furniture, equipment, and campus rooms across Nigeria.">
+    <link href="img/logo1.png" rel="icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+<header class="site-header" id="siteHeader">
+    <div class="wrap header-inner">
+        <a class="brand" href="index.html"><img src="img/logo1.png" alt="Forjalab"><span>Forjalab</span></a>
+        <nav class="site-nav" id="siteNav">
+            <a href="index.html">Home</a>
+            <a href="spaces.html">Spaces</a>
+            <a class="is-active" href="project.html">Work</a>
+            <a href="service.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a class="btn btn-primary header-cta" href="https://wa.link/xsimeu">Request a plan</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="wrap">
+        <div class="crumb"><a href="index.html">Home</a> · Work</div>
+        <span class="kicker">The archive</span>
+        <h1>Every room we have already opened.</h1>
+        <p class="lede">Laboratories, ICT, libraries, kitchens, workshops, and the furniture that holds them. Filter by type, then open any photograph.</p>
+    </div>
+</section>
+
+<section class="section" style="padding-top:0">
+    <div class="wrap">
+        <div class="filters">
+            <button class="is-active" data-filter="*">All</button>
+            <button data-filter="science">Science labs</button>
+            <button data-filter="ict">ICT</button>
+            <button data-filter="library">Library</button>
+            <button data-filter="furniture">Furniture</button>
+            <button data-filter="equipment">Equipment</button>
+            <button data-filter="campus">Campus</button>
+        </div>
+        <div class="gallery">
+                <a href="img/spaces/chemistry.jpg" data-lightbox="work" data-title="Chemistry laboratory" data-cat="science">
+                    <img src="img/spaces/chemistry.jpg" alt="Chemistry laboratory">
+                    <figcaption>Chemistry laboratory</figcaption>
+                </a>
+                <a href="img/spaces/physics.jpg" data-lightbox="work" data-title="Physics laboratory" data-cat="science">
+                    <img src="img/spaces/physics.jpg" alt="Physics laboratory">
+                    <figcaption>Physics laboratory</figcaption>
+                </a>
+                <a href="img/spaces/biology.jpg" data-lightbox="work" data-title="Biology laboratory" data-cat="science">
+                    <img src="img/spaces/biology.jpg" alt="Biology laboratory">
+                    <figcaption>Biology laboratory</figcaption>
+                </a>
+                <a href="img/spaces/ict.jpg" data-lightbox="work" data-title="ICT laboratory" data-cat="ict">
+                    <img src="img/spaces/ict.jpg" alt="ICT laboratory">
+                    <figcaption>ICT laboratory</figcaption>
+                </a>
+                <a href="img/spaces/ict-2.jpg" data-lightbox="work" data-title="ICT carrels" data-cat="ict">
+                    <img src="img/spaces/ict-2.jpg" alt="ICT carrels">
+                    <figcaption>ICT carrels</figcaption>
+                </a>
+                <a href="img/spaces/library.jpg" data-lightbox="work" data-title="Library study bays" data-cat="library">
+                    <img src="img/spaces/library.jpg" alt="Library study bays">
+                    <figcaption>Library study bays</figcaption>
+                </a>
+                <a href="img/spaces/library-2.jpg" data-lightbox="work" data-title="Library" data-cat="library">
+                    <img src="img/spaces/library-2.jpg" alt="Library">
+                    <figcaption>Library</figcaption>
+                </a>
+                <a href="img/spaces/home-economics.jpg" data-lightbox="work" data-title="Home economics kitchen" data-cat="campus">
+                    <img src="img/spaces/home-economics.jpg" alt="Home economics kitchen">
+                    <figcaption>Home economics kitchen</figcaption>
+                </a>
+                <a href="img/spaces/cafeteria.jpg" data-lightbox="work" data-title="School cafeteria" data-cat="campus">
+                    <img src="img/spaces/cafeteria.jpg" alt="School cafeteria">
+                    <figcaption>School cafeteria</figcaption>
+                </a>
+                <a href="img/spaces/basic-tech.jpg" data-lightbox="work" data-title="Basic technology workshop" data-cat="science">
+                    <img src="img/spaces/basic-tech.jpg" alt="Basic technology workshop">
+                    <figcaption>Basic technology workshop</figcaption>
+                </a>
+                <a href="img/spaces/drawing-table.jpg" data-lightbox="work" data-title="Adjustable drawing tables" data-cat="furniture">
+                    <img src="img/spaces/drawing-table.jpg" alt="Adjustable drawing tables">
+                    <figcaption>Adjustable drawing tables</figcaption>
+                </a>
+                <a href="img/spaces/drawing-table-2.jpg" data-lightbox="work" data-title="Drawing studio" data-cat="furniture">
+                    <img src="img/spaces/drawing-table-2.jpg" alt="Drawing studio">
+                    <figcaption>Drawing studio</figcaption>
+                </a>
+                <a href="img/int1.jpg" data-lightbox="work" data-title="Mobile lab table" data-cat="furniture">
+                    <img src="img/int1.jpg" alt="Mobile lab table">
+                    <figcaption>Mobile lab table</figcaption>
+                </a>
+                <a href="img/int2.jpg" data-lightbox="work" data-title="Laboratory furniture" data-cat="furniture">
+                    <img src="img/int2.jpg" alt="Laboratory furniture">
+                    <figcaption>Laboratory furniture</figcaption>
+                </a>
+                <a href="img/int3.jpg" data-lightbox="work" data-title="Lab planning" data-cat="science">
+                    <img src="img/int3.jpg" alt="Lab planning">
+                    <figcaption>Lab planning</figcaption>
+                </a>
+                <a href="img/int4.jpg" data-lightbox="work" data-title="Installed laboratory 4" data-cat="science">
+                    <img src="img/int4.jpg" alt="Installed laboratory 4">
+                    <figcaption>Installed laboratory 4</figcaption>
+                </a>
+                <a href="img/int5.jpg" data-lightbox="work" data-title="Installed laboratory 5" data-cat="science">
+                    <img src="img/int5.jpg" alt="Installed laboratory 5">
+                    <figcaption>Installed laboratory 5</figcaption>
+                </a>
+                <a href="img/int6.jpg" data-lightbox="work" data-title="Laboratory equipment" data-cat="equipment">
+                    <img src="img/int6.jpg" alt="Laboratory equipment">
+                    <figcaption>Laboratory equipment</figcaption>
+                </a>
+                <a href="img/int7.jpg" data-lightbox="work" data-title="Installed laboratory 7" data-cat="science">
+                    <img src="img/int7.jpg" alt="Installed laboratory 7">
+                    <figcaption>Installed laboratory 7</figcaption>
+                </a>
+                <a href="img/int8.jpg" data-lightbox="work" data-title="Installed laboratory 8" data-cat="science">
+                    <img src="img/int8.jpg" alt="Installed laboratory 8">
+                    <figcaption>Installed laboratory 8</figcaption>
+                </a>
+                <a href="img/int9.jpg" data-lightbox="work" data-title="Installed laboratory 9" data-cat="science">
+                    <img src="img/int9.jpg" alt="Installed laboratory 9">
+                    <figcaption>Installed laboratory 9</figcaption>
+                </a>
+                <a href="img/int10.jpg" data-lightbox="work" data-title="Furniture & fittings" data-cat="furniture">
+                    <img src="img/int10.jpg" alt="Furniture & fittings">
+                    <figcaption>Furniture & fittings</figcaption>
+                </a>
+                <a href="img/int11.jpg" data-lightbox="work" data-title="Laboratory equipment" data-cat="equipment">
+                    <img src="img/int11.jpg" alt="Laboratory equipment">
+                    <figcaption>Laboratory equipment</figcaption>
+                </a>
+                <a href="img/int12.jpg" data-lightbox="work" data-title="Installed laboratory 12" data-cat="science">
+                    <img src="img/int12.jpg" alt="Installed laboratory 12">
+                    <figcaption>Installed laboratory 12</figcaption>
+                </a>
+                <a href="img/int13.jpg" data-lightbox="work" data-title="Installed laboratory 13" data-cat="science">
+                    <img src="img/int13.jpg" alt="Installed laboratory 13">
+                    <figcaption>Installed laboratory 13</figcaption>
+                </a>
+                <a href="img/int14.jpg" data-lightbox="work" data-title="Computer tables" data-cat="ict">
+                    <img src="img/int14.jpg" alt="Computer tables">
+                    <figcaption>Computer tables</figcaption>
+                </a>
+                <a href="img/int15.jpg" data-lightbox="work" data-title="Computer laboratory" data-cat="ict">
+                    <img src="img/int15.jpg" alt="Computer laboratory">
+                    <figcaption>Computer laboratory</figcaption>
+                </a>
+                <a href="img/int16.jpg" data-lightbox="work" data-title="Lecture chairs" data-cat="furniture">
+                    <img src="img/int16.jpg" alt="Lecture chairs">
+                    <figcaption>Lecture chairs</figcaption>
+                </a>
+                <a href="img/int17.jpg" data-lightbox="work" data-title="Installed laboratory 17" data-cat="science">
+                    <img src="img/int17.jpg" alt="Installed laboratory 17">
+                    <figcaption>Installed laboratory 17</figcaption>
+                </a>
+                <a href="img/int18.jpg" data-lightbox="work" data-title="Installed laboratory 18" data-cat="science">
+                    <img src="img/int18.jpg" alt="Installed laboratory 18">
+                    <figcaption>Installed laboratory 18</figcaption>
+                </a>
+                <a href="img/int19.jpg" data-lightbox="work" data-title="Installed laboratory 19" data-cat="science">
+                    <img src="img/int19.jpg" alt="Installed laboratory 19">
+                    <figcaption>Installed laboratory 19</figcaption>
+                </a>
+                <a href="img/int20.jpg" data-lightbox="work" data-title="Installed laboratory 20" data-cat="science">
+                    <img src="img/int20.jpg" alt="Installed laboratory 20">
+                    <figcaption>Installed laboratory 20</figcaption>
+                </a>
+                <a href="img/int21.jpg" data-lightbox="work" data-title="Installed laboratory 21" data-cat="science">
+                    <img src="img/int21.jpg" alt="Installed laboratory 21">
+                    <figcaption>Installed laboratory 21</figcaption>
+                </a>
+                <a href="img/int22.jpg" data-lightbox="work" data-title="Kitchen cabinet" data-cat="campus">
+                    <img src="img/int22.jpg" alt="Kitchen cabinet">
+                    <figcaption>Kitchen cabinet</figcaption>
+                </a>
+                <a href="img/int23.jpg" data-lightbox="work" data-title="Wardrobes" data-cat="furniture">
+                    <img src="img/int23.jpg" alt="Wardrobes">
+                    <figcaption>Wardrobes</figcaption>
+                </a>
+                <a href="img/int24.jpg" data-lightbox="work" data-title="Installed laboratory 24" data-cat="science">
+                    <img src="img/int24.jpg" alt="Installed laboratory 24">
+                    <figcaption>Installed laboratory 24</figcaption>
+                </a>
+                <a href="img/int25.jpg" data-lightbox="work" data-title="Kitchen fittings" data-cat="campus">
+                    <img src="img/int25.jpg" alt="Kitchen fittings">
+                    <figcaption>Kitchen fittings</figcaption>
+                </a>
+                <a href="img/int26.jpg" data-lightbox="work" data-title="Installed laboratory 26" data-cat="science">
+                    <img src="img/int26.jpg" alt="Installed laboratory 26">
+                    <figcaption>Installed laboratory 26</figcaption>
+                </a>
+                <a href="img/int27.jpg" data-lightbox="work" data-title="Installed laboratory 27" data-cat="science">
+                    <img src="img/int27.jpg" alt="Installed laboratory 27">
+                    <figcaption>Installed laboratory 27</figcaption>
+                </a>
+                <a href="img/int28.jpg" data-lightbox="work" data-title="Installed laboratory 28" data-cat="science">
+                    <img src="img/int28.jpg" alt="Installed laboratory 28">
+                    <figcaption>Installed laboratory 28</figcaption>
+                </a>
+                <a href="img/int29.jpg" data-lightbox="work" data-title="Installed laboratory 29" data-cat="science">
+                    <img src="img/int29.jpg" alt="Installed laboratory 29">
+                    <figcaption>Installed laboratory 29</figcaption>
+                </a>
+                <a href="img/int30.jpg" data-lightbox="work" data-title="Installed laboratory 30" data-cat="science">
+                    <img src="img/int30.jpg" alt="Installed laboratory 30">
+                    <figcaption>Installed laboratory 30</figcaption>
+                </a>
+                <a href="img/int31.jpg" data-lightbox="work" data-title="Installed laboratory 31" data-cat="science">
+                    <img src="img/int31.jpg" alt="Installed laboratory 31">
+                    <figcaption>Installed laboratory 31</figcaption>
+                </a>
+                <a href="img/lab1.jpg" data-lightbox="work" data-title="Laboratory equipment 1" data-cat="equipment">
+                    <img src="img/lab1.jpg" alt="Laboratory equipment 1">
+                    <figcaption>Laboratory equipment 1</figcaption>
+                </a>
+                <a href="img/lab2.jpg" data-lightbox="work" data-title="Laboratory equipment 2" data-cat="equipment">
+                    <img src="img/lab2.jpg" alt="Laboratory equipment 2">
+                    <figcaption>Laboratory equipment 2</figcaption>
+                </a>
+                <a href="img/lab3.jpg" data-lightbox="work" data-title="Laboratory equipment 3" data-cat="equipment">
+                    <img src="img/lab3.jpg" alt="Laboratory equipment 3">
+                    <figcaption>Laboratory equipment 3</figcaption>
+                </a>
+                <a href="img/lab4.jpg" data-lightbox="work" data-title="Laboratory equipment 4" data-cat="equipment">
+                    <img src="img/lab4.jpg" alt="Laboratory equipment 4">
+                    <figcaption>Laboratory equipment 4</figcaption>
+                </a>
+                <a href="img/lab5.jpg" data-lightbox="work" data-title="Laboratory equipment 5" data-cat="equipment">
+                    <img src="img/lab5.jpg" alt="Laboratory equipment 5">
+                    <figcaption>Laboratory equipment 5</figcaption>
+                </a>
+                <a href="img/lab6.jpg" data-lightbox="work" data-title="Laboratory equipment 6" data-cat="equipment">
+                    <img src="img/lab6.jpg" alt="Laboratory equipment 6">
+                    <figcaption>Laboratory equipment 6</figcaption>
+                </a>
+                <a href="img/nbg1.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
+                    <img src="img/nbg1.jpg" alt="Laboratory interior">
+                    <figcaption>Laboratory interior</figcaption>
+                </a>
+                <a href="img/nbg2.jpg" data-lightbox="work" data-title="Science laboratory" data-cat="science">
+                    <img src="img/nbg2.jpg" alt="Science laboratory">
+                    <figcaption>Science laboratory</figcaption>
+                </a>
+                <a href="img/nbg3.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
+                    <img src="img/nbg3.jpg" alt="Laboratory interior">
+                    <figcaption>Laboratory interior</figcaption>
+                </a>
+                <a href="img/nbg4.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
+                    <img src="img/nbg4.jpg" alt="Laboratory interior">
+                    <figcaption>Laboratory interior</figcaption>
+                </a>
+                <a href="img/nbg5.webp" data-lightbox="work" data-title="Teaching laboratory" data-cat="science">
+                    <img src="img/nbg5.webp" alt="Teaching laboratory">
+                    <figcaption>Teaching laboratory</figcaption>
+                </a>
+                <a href="img/nbg6.jpeg" data-lightbox="work" data-title="Durable lab furniture" data-cat="science">
+                    <img src="img/nbg6.jpeg" alt="Durable lab furniture">
+                    <figcaption>Durable lab furniture</figcaption>
+                </a>
+                <a href="img/nbg7.jpg" data-lightbox="work" data-title="Laboratory renovation" data-cat="science">
+                    <img src="img/nbg7.jpg" alt="Laboratory renovation">
+                    <figcaption>Laboratory renovation</figcaption>
+                </a>
+                <a href="img/nbg8.jpg" data-lightbox="work" data-title="Classroom laboratory" data-cat="science">
+                    <img src="img/nbg8.jpg" alt="Classroom laboratory">
+                    <figcaption>Classroom laboratory</figcaption>
+                </a>
+                <a href="img/nbg9.jpeg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
+                    <img src="img/nbg9.jpeg" alt="Laboratory interior">
+                    <figcaption>Laboratory interior</figcaption>
+                </a>
+                <a href="img/nbg10.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
+                    <img src="img/nbg10.jpg" alt="Laboratory interior">
+                    <figcaption>Laboratory interior</figcaption>
+                </a>
+                <a href="img/nbg11.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
+                    <img src="img/nbg11.jpg" alt="Laboratory interior">
+                    <figcaption>Laboratory interior</figcaption>
+                </a>
+                <a href="img/nbg12.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
+                    <img src="img/nbg12.jpg" alt="Laboratory interior">
+                    <figcaption>Laboratory interior</figcaption>
+                </a>
+                <a href="img/nbg13.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
+                    <img src="img/nbg13.jpg" alt="Laboratory interior">
+                    <figcaption>Laboratory interior</figcaption>
+                </a>
+                <a href="img/nbg14.jpg" data-lightbox="work" data-title="Laboratory interior" data-cat="science">
+                    <img src="img/nbg14.jpg" alt="Laboratory interior">
+                    <figcaption>Laboratory interior</figcaption>
+                </a>
+                <a href="img/portfolio-1.jpg" data-lightbox="work" data-title="Project 1" data-cat="science">
+                    <img src="img/portfolio-1.jpg" alt="Project 1">
+                    <figcaption>Project 1</figcaption>
+                </a>
+                <a href="img/portfolio-2.jpg" data-lightbox="work" data-title="Project 2" data-cat="science">
+                    <img src="img/portfolio-2.jpg" alt="Project 2">
+                    <figcaption>Project 2</figcaption>
+                </a>
+                <a href="img/portfolio-3.jpg" data-lightbox="work" data-title="Project 3" data-cat="science">
+                    <img src="img/portfolio-3.jpg" alt="Project 3">
+                    <figcaption>Project 3</figcaption>
+                </a>
+                <a href="img/portfolio-4.jpg" data-lightbox="work" data-title="Project 4" data-cat="science">
+                    <img src="img/portfolio-4.jpg" alt="Project 4">
+                    <figcaption>Project 4</figcaption>
+                </a>
+                <a href="img/portfolio-5.jpg" data-lightbox="work" data-title="Project 5" data-cat="science">
+                    <img src="img/portfolio-5.jpg" alt="Project 5">
+                    <figcaption>Project 5</figcaption>
+                </a>
+                <a href="img/portfolio-6.jpg" data-lightbox="work" data-title="Project 6" data-cat="science">
+                    <img src="img/portfolio-6.jpg" alt="Project 6">
+                    <figcaption>Project 6</figcaption>
+                </a>
+                <a href="img/service-1.jpg" data-lightbox="work" data-title="Workshop 1" data-cat="furniture">
+                    <img src="img/service-1.jpg" alt="Workshop 1">
+                    <figcaption>Workshop 1</figcaption>
+                </a>
+                <a href="img/service-2.jpg" data-lightbox="work" data-title="Workshop 2" data-cat="furniture">
+                    <img src="img/service-2.jpg" alt="Workshop 2">
+                    <figcaption>Workshop 2</figcaption>
+                </a>
+                <a href="img/service-3.jpg" data-lightbox="work" data-title="Workshop 3" data-cat="furniture">
+                    <img src="img/service-3.jpg" alt="Workshop 3">
+                    <figcaption>Workshop 3</figcaption>
+                </a>
+                <a href="img/service-4.jpg" data-lightbox="work" data-title="Workshop 4" data-cat="furniture">
+                    <img src="img/service-4.jpg" alt="Workshop 4">
+                    <figcaption>Workshop 4</figcaption>
+                </a>
+                <a href="img/service-5.jpg" data-lightbox="work" data-title="Workshop 5" data-cat="furniture">
+                    <img src="img/service-5.jpg" alt="Workshop 5">
+                    <figcaption>Workshop 5</figcaption>
+                </a>
+                <a href="img/service-6.jpg" data-lightbox="work" data-title="Workshop 6" data-cat="furniture">
+                    <img src="img/service-6.jpg" alt="Workshop 6">
+                    <figcaption>Workshop 6</figcaption>
+                </a>
+                <a href="img/carousel-1.jpg" data-lightbox="work" data-title="Campus 1" data-cat="campus">
+                    <img src="img/carousel-1.jpg" alt="Campus 1">
+                    <figcaption>Campus 1</figcaption>
+                </a>
+                <a href="img/carousel-2.jpg" data-lightbox="work" data-title="Campus 2" data-cat="campus">
+                    <img src="img/carousel-2.jpg" alt="Campus 2">
+                    <figcaption>Campus 2</figcaption>
+                </a>
+                <a href="img/carousel-3.jpg" data-lightbox="work" data-title="Campus 3" data-cat="campus">
+                    <img src="img/carousel-3.jpg" alt="Campus 3">
+                    <figcaption>Campus 3</figcaption>
+                </a>
+                <a href="img/glass1.jpg" data-lightbox="work" data-title="Lab glassware" data-cat="equipment">
+                    <img src="img/glass1.jpg" alt="Lab glassware">
+                    <figcaption>Lab glassware</figcaption>
+                </a>
+                <a href="img/about.jpg" data-lightbox="work" data-title="Workshop" data-cat="furniture">
+                    <img src="img/about.jpg" alt="Workshop">
+                    <figcaption>Workshop</figcaption>
+                </a>
+                <a href="img/feature.jpg" data-lightbox="work" data-title="Craft detail" data-cat="furniture">
+                    <img src="img/feature.jpg" alt="Craft detail">
+                    <figcaption>Craft detail</figcaption>
+                </a>
+                <a href="img/quote.jpg" data-lightbox="work" data-title="Planning" data-cat="science">
+                    <img src="img/quote.jpg" alt="Planning">
+                    <figcaption>Planning</figcaption>
+                </a>
+                <a href="img/footer.jpg" data-lightbox="work" data-title="Campus" data-cat="campus">
+                    <img src="img/footer.jpg" alt="Campus">
+                    <figcaption>Campus</figcaption>
+                </a>
+                <a href="img/team-1.jpg" data-lightbox="work" data-title="Studio" data-cat="campus">
+                    <img src="img/team-1.jpg" alt="Studio">
+                    <figcaption>Studio</figcaption>
+                </a>
+                <a href="img/team-2.jpg" data-lightbox="work" data-title="Studio" data-cat="campus">
+                    <img src="img/team-2.jpg" alt="Studio">
+                    <figcaption>Studio</figcaption>
+                </a>
+                <a href="img/team-3.jpg" data-lightbox="work" data-title="Studio" data-cat="campus">
+                    <img src="img/team-3.jpg" alt="Studio">
+                    <figcaption>Studio</figcaption>
+                </a>
+                <a href="img/team-4.jpg" data-lightbox="work" data-title="Studio" data-cat="campus">
+                    <img src="img/team-4.jpg" alt="Studio">
+                    <figcaption>Studio</figcaption>
+                </a>
+                <a href="img/testimonial-1.jpg" data-lightbox="work" data-title="People of science" data-cat="campus">
+                    <img src="img/testimonial-1.jpg" alt="People of science">
+                    <figcaption>People of science</figcaption>
+                </a>
+                <a href="img/testimonial-2.jpg" data-lightbox="work" data-title="People of science" data-cat="campus">
+                    <img src="img/testimonial-2.jpg" alt="People of science">
+                    <figcaption>People of science</figcaption>
+                </a>
+                <a href="img/testimonial-3.jpg" data-lightbox="work" data-title="People of science" data-cat="campus">
+                    <img src="img/testimonial-3.jpg" alt="People of science">
+                    <figcaption>People of science</figcaption>
+                </a>
+                <a href="img/testimonial-4.jpg" data-lightbox="work" data-title="People of science" data-cat="campus">
+                    <img src="img/testimonial-4.jpg" alt="People of science">
+                    <figcaption>People of science</figcaption>
+                </a>
         </div>
     </div>
-    <!-- Spinner End -->
+</section>
 
+<section class="cta-band band-dark">
+    <div class="wrap">
+        <h2>Want a room that looks like these?</h2>
+        <p>Send a photograph of the empty space. We will answer with a plan.</p>
+        <a class="btn btn-primary" href="https://wa.link/xsimeu">Start a project</a>
+    </div>
+</section>
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Lagos, Nigeria</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center py-3">
-                    <small class="far fa-clock text-primary me-2"></small>
-                    <small>Mon - Sat : 09.00 AM - 09.00 PM</small>
-                </div>
+<footer class="site-footer">
+    <div class="wrap footer-grid">
+        <div>
+            <a class="brand" href="index.html"><img src="img/logo1.png" alt=""><span>Forjalab</span></a>
+            <p>Indigenous laboratory studio in Lagos. We design, manufacture, and install science spaces for schools across Nigeria.</p>
+        </div>
+        <div>
+            <h4>Spaces</h4>
+            <div class="footer-links">
+                <a href="spaces.html#chemistry">Chemistry</a>
+                <a href="spaces.html#physics">Physics</a>
+                <a href="spaces.html#ict">ICT</a>
+                <a href="spaces.html#library">Library</a>
             </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>+234 703 010 7780</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
-                </div>
+        </div>
+        <div>
+            <h4>Studio</h4>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="service.html">Services</a>
+                <a href="project.html">Work</a>
+                <a href="contact.html">Contact</a>
             </div>
+        </div>
+        <div>
+            <h4>Visit</h4>
+            <p>No 69 Lagos Road, Ikorodu, Lagos<br>Mon–Sat, 09:00–21:00</p>
+            <p><a href="tel:+2349157545966">+234 915 754 5966</a><br>
+            <a href="mailto:sales.forjalabtech@gmail.com">sales.forjalabtech@gmail.com</a></p>
         </div>
     </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary">Forjalab</h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <a href="project.html" class="nav-item nav-link active">Project</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="feature.html" class="dropdown-item">Feature</a>
-                        <a href="https://wa.link/be3dur" class="dropdown-item">Free Quote</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
-            </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5">
-        <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Project</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Project</li>
-                </ol>
-            </nav>
-        </div>
+    <div class="wrap legal">
+        <span>© 2026 Forjalab Technologies. All rights reserved.</span>
+        <span>Made in Lagos</span>
     </div>
-    <!-- Page Header End -->
-
-
-    <!-- Projects Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="section-title text-center">
-                <h1 class="display-5 mb-5">Our Projects</h1>
-            </div>
-            <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">General Carpentry</li>
-                        <li class="mx-2" data-filter=".second">Custom Carpentry</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row g-4 portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">General Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="rounded overflow-hidden">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="border border-5 border-light border-top-0 p-4">
-                            <p class="text-primary fw-medium mb-2">Custom Carpentry</p>
-                            <h5 class="lh-base mb-0">Wooden Furniture Manufacturing And Remodeling</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Projects End -->
-        
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Services</h4>
-                    <a class="btn btn-link" href="">General Carpentry</a>
-                    <a class="btn btn-link" href="">Furniture Remodeling</a>
-                    <a class="btn btn-link" href="">Wooden Floor</a>
-                    <a class="btn btn-link" href="">Wooden Furniture</a>
-                    <a class="btn btn-link" href="">Custom Carpentry</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+</footer>
+<a class="wa-float" href="https://wa.link/xsimeu" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<a href="#" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="js/main.js"></script>
 </body>
-
 </html>

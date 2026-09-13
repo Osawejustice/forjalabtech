@@ -1,512 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <title>Forjalab</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
+    <title>Forjalab — Science laboratories, built for how science is taught</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forjalab designs, manufactures, and installs science laboratories for Nigerian schools — furniture, fittings, equipment, and the plan that holds it together.">
+    <link href="img/logo1.png" rel="icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
-
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
-
-
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>No 69 Lagos road, Ikorodu, Lagos, Nigeria</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center py-3">
-                    <small class="far fa-clock text-primary me-2"></small>
-                    <small>Mon - Sat : 09.00 AM - 09.00 PM</small>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>+234 915 754 5966</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <img src="img/logo1.png" class="m-0 text-primary" alt="" style="width:130px;height:120px;">
-            <!--<h2 class="m-0 text-primary">Forjalab</h2>-->
+<body class="home">
+<header class="site-header" id="siteHeader">
+    <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+            <img src="img/logo1.png" alt="Forjalab">
+            <span>Forjalab</span>
         </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <!--<a href="about.html" class="nav-item nav-link">About</a>-->
-                <a href="service.html" class="nav-item nav-link">Our Services</a>
-                <!--<a href="project.html" class="nav-item nav-link">Project</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="feature.html" class="dropdown-item">Feature</a>
-                        <a href="hhttps://wa.link/xsimeu" class="dropdown-item">Free Quote</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>-->
-                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-            </div>
-            <a href="https://wa.link/xsimeu" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+        <nav class="site-nav" id="siteNav">
+            <a class="is-active" href="index.html">Home</a>
+            <a href="spaces.html">Spaces</a>
+            <a href="project.html">Work</a>
+            <a href="service.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a class="btn btn-primary header-cta" href="https://wa.link/xsimeu">Request a plan</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<section class="hero" id="hero">
+    <div class="hero-atmosphere" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+        <svg class="hero-diagram" viewBox="0 0 600 600" fill="none">
+            <defs>
+                <linearGradient id="ringA" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#A6329B" stop-opacity="0"/>
+                    <stop offset="0.45" stop-color="#F0C6E8" stop-opacity="0.95"/>
+                    <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="ringB" x1="1" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+                    <stop offset="0.5" stop-color="#A6329B" stop-opacity="0.7"/>
+                    <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+                </linearGradient>
+            </defs>
+            <g class="spin spin-slow">
+                <ellipse cx="300" cy="300" rx="240" ry="92" stroke="url(#ringA)" stroke-width="1.25"/>
+            </g>
+            <g class="spin spin-med">
+                <ellipse cx="300" cy="300" rx="168" ry="236" stroke="url(#ringB)" stroke-width="1.1"/>
+            </g>
+            <g class="spin spin-fast">
+                <ellipse cx="300" cy="300" rx="86" ry="210" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+            </g>
+            <path d="M120 210C210 80 390 80 480 210C390 340 210 340 120 210Z" stroke="rgba(240,198,232,0.28)" stroke-width="1.2"/>
+            <path d="M180 430C250 310 430 250 500 360" stroke="rgba(166,50,155,0.55)" stroke-width="1.4" stroke-linecap="round"/>
+            <circle cx="300" cy="300" r="7" fill="#A6329B"/>
+            <circle cx="300" cy="300" r="18" stroke="rgba(166,50,155,0.4)" stroke-width="1"/>
+            <circle cx="534" cy="300" r="4.5" fill="#fff"/>
+            <circle cx="168" cy="142" r="3.5" fill="#F0C6E8"/>
+            <circle cx="214" cy="468" r="3.5" fill="#fff"/>
+        </svg>
+    </div>
+    <div class="hero-copy">
+        <span class="kicker">Lagos laboratory studio</span>
+        <h1 class="hero-title">
+            <span class="line"><span>Labs built for</span></span>
+            <span class="line"><span>the way <em>science</em></span></span>
+            <span class="line"><span>is taught.</span></span>
+        </h1>
+        <p class="hero-lede">We design, manufacture, and install rooms where students can actually experiment — for <span class="swap-wrap"><span class="word-swap" id="wordSwap"><b class="is-on">chemistry</b><b>physics</b><b>biology</b><b>ICT</b><b>making</b></span>.</span></p>
+        <div class="hero-actions">
+            <a class="btn btn-primary" href="spaces.html">Explore spaces</a>
+            <a class="btn btn-ghost" href="https://wa.link/xsimeu">Free lab consultation</a>
         </div>
-    </nav>
-    <!-- Navbar End -->
+        <dl class="hero-meta">
+            <div><dt>Schools</dt><dd>67</dd></div>
+            <div><dt>Laboratories</dt><dd>42</dd></div>
+            <div><dt>Based</dt><dd>Ikorodu</dd></div>
+        </dl>
+    </div>
+</section>
+<div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+        <span>Chemistry</span><span>Physics</span><span>Biology</span><span>ICT</span><span>Library</span><span>Home economics</span><span>Basic technology</span><span>Cafeteria</span><span>Drawing studio</span>
+        <span>Chemistry</span><span>Physics</span><span>Biology</span><span>ICT</span><span>Library</span><span>Home economics</span><span>Basic technology</span><span>Cafeteria</span><span>Drawing studio</span>
+    </div>
+</div>
 
+<section class="section reveal">
+    <div class="wrap">
+        <div class="stats">
+            <div class="stat"><b data-toggle="counter-up">5</b><span>Years furnishing Nigerian labs</span></div>
+            <div class="stat"><b data-toggle="counter-up">67</b><span>Schools and colleges equipped</span></div>
+            <div class="stat"><b data-toggle="counter-up">42</b><span>Laboratories delivered</span></div>
+            <div class="stat"><b>ISO</b><span>Certified apparatus, installed on site</span></div>
+        </div>
+    </div>
+</section>
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/nbg5.webp" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-lg-8 text-center">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To Forjalab</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Science Laboratories and Classroom Solutions</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">We design and manufacture science lab furniture to create engaging learning environments</p>
-                                <a href="service.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="https://wa.link/xsimeu" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<section class="section reveal" style="padding-top:24px">
+    <div class="wrap">
+        <div class="section-head">
+            <div>
+                <span class="kicker">Browse by environment</span>
+                <h2>A science pathway for every room.</h2>
+                <p>Chemistry, physics, biology, ICT, the library, the cafeteria — each space has its own workflow. We design for the work that happens there, not a generic classroom with a sink.</p>
             </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/nbg6.jpeg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-lg-8 text-center">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To Forjalab</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Durable Laboratory Equipments and Furniture</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Our Science Laboratories create a safe working environment for all students and teaching staff</p>
-                                <a href="service.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="https://wa.link/xsimeu" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <a class="btn btn-outline" href="spaces.html">View all spaces</a>
+        </div>
+        <div class="space-grid">
+            <a class="space-card wide" href="spaces.html#chemistry">
+                <img src="img/spaces/chemistry.jpg" alt="Chemistry laboratory">
+                <figcaption><h3>Chemistry</h3><p>Islands, reagent racks, and a fume cupboard where it belongs.</p></figcaption>
+            </a>
+            <a class="space-card" href="spaces.html#physics">
+                <img src="img/spaces/physics.jpg" alt="Physics laboratory">
+                <figcaption><h3>Physics</h3><p>Powered islands, durable tops, clear sightlines.</p></figcaption>
+            </a>
+            <a class="space-card" href="spaces.html#biology">
+                <img src="img/spaces/biology.jpg" alt="Biology laboratory">
+                <figcaption><h3>Biology</h3><p>Dissection-ready benches, wet services, specimen storage.</p></figcaption>
+            </a>
+            <a class="space-card" href="spaces.html#ict">
+                <img src="img/spaces/ict.jpg" alt="ICT laboratory">
+                <figcaption><h3>ICT</h3><p>Carrels, cable management, teacher sightlines.</p></figcaption>
+            </a>
+            <a class="space-card" href="spaces.html#library">
+                <img src="img/spaces/library.jpg" alt="School library">
+                <figcaption><h3>Library</h3><p>Quiet study bays and wall storage that actually holds books.</p></figcaption>
+            </a>
+            <a class="space-card wide" href="spaces.html#home-economics">
+                <img src="img/spaces/home-economics.jpg" alt="Home economics laboratory">
+                <figcaption><h3>Home economics</h3><p>Teaching kitchens with granite prep, gas, and demonstration space.</p></figcaption>
+            </a>
+            <a class="space-card" href="spaces.html#basic-tech">
+                <img src="img/spaces/basic-tech.jpg" alt="Basic technology workshop">
+                <figcaption><h3>Basic technology</h3><p>Heavy tables, vises, and storage for making.</p></figcaption>
+            </a>
+            <a class="space-card" href="spaces.html#cafeteria">
+                <img src="img/spaces/cafeteria.jpg" alt="School cafeteria">
+                <figcaption><h3>Cafeteria</h3><p>Durable dining that survives a thousand lunches.</p></figcaption>
+            </a>
+            <a class="space-card" href="spaces.html#drawing">
+                <img src="img/spaces/drawing-table.jpg" alt="Adjustable drawing tables">
+                <figcaption><h3>Drawing studio</h3><p>Adjustable boards for technical drawing and art.</p></figcaption>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section band-mist reveal">
+    <div class="wrap">
+        <div class="section-head">
+            <div>
+                <span class="kicker">How we work</span>
+                <h2>From empty room to working laboratory.</h2>
+                <p>Schools do not need a catalogue. They need a partner who will walk the brief, the budget, and the building — then manufacture what the room actually requires.</p>
             </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/nbg8.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-lg-8 text-center">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To Forjalab</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">Furnishing Essentials for school labs</h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Get the versatility you need and the standards you trust from furnishings that serve as a catalyst for your observations and experiments.</p>
-                                <a href="service.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
-                                <a href="https://wa.link/xsimeu" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Free Quote</a>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+        <div class="process">
+            <article class="process-item">
+                <span class="num">01 — Discover</span>
+                <h3>Walk the brief</h3>
+                <p>Curriculum, class size, services, and the money you actually have. We listen before we draw.</p>
+            </article>
+            <article class="process-item">
+                <span class="num">02 — Design</span>
+                <h3>Plan the work</h3>
+                <p>Layout, wet and dry zones, storage, ventilation, and teacher demonstration — so the room is safe to use on day one.</p>
+            </article>
+            <article class="process-item">
+                <span class="num">03 — Build</span>
+                <h3>Make and install</h3>
+                <p>Benches, islands, cabinets, and fittings manufactured for the drawing, then installed on site in Lagos and beyond.</p>
+            </article>
+            <article class="process-item">
+                <span class="num">04 — Equip</span>
+                <h3>Stock the science</h3>
+                <p>Glassware, reagents, apparatus, and aftercare — so the lab is not an empty piece of furniture.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section reveal">
+    <div class="wrap">
+        <div class="section-head">
+            <div>
+                <span class="kicker">What we make</span>
+                <h2>Furniture is only the beginning.</h2>
+                <p>Design, manufacture, supply, installation, renovation — one studio for the whole laboratory.</p>
+            </div>
+            <a class="btn btn-outline" href="service.html">All services</a>
+        </div>
+        <div class="service-grid">
+            <article class="service-card">
+                <div class="thumb"><img src="img/int3.jpg" alt="Laboratory planning"></div>
+                <div class="body">
+                    <h3>Laboratory planning</h3>
+                    <p>Purpose-built layouts for chemistry, biology, physics, and STEM — sized to the class, not a template.</p>
                 </div>
+            </article>
+            <article class="service-card">
+                <div class="thumb"><img src="img/nbg6.jpeg" alt="Laboratory furniture"></div>
+                <div class="body">
+                    <h3>Furniture &amp; fittings</h3>
+                    <p>Chemical-resistant tops, islands with sinks, stools, storage, and the services that run through them.</p>
+                </div>
+            </article>
+            <article class="service-card">
+                <div class="thumb"><img src="img/lab5.jpg" alt="Laboratory equipment"></div>
+                <div class="body">
+                    <h3>Equipment procurement</h3>
+                    <p>ISO-certified apparatus specified for secondary and tertiary science, delivered and commissioned.</p>
+                </div>
+            </article>
+            <article class="service-card">
+                <div class="thumb"><img src="img/lab4.jpg" alt="Glassware and chemicals"></div>
+                <div class="body">
+                    <h3>Glassware &amp; reagents</h3>
+                    <p>Lab wares in glass and plastic, plus the chemicals a working school laboratory actually consumes.</p>
+                </div>
+            </article>
+            <article class="service-card">
+                <div class="thumb"><img src="img/nbg7.jpg" alt="Laboratory renovation"></div>
+                <div class="body">
+                    <h3>Renovation</h3>
+                    <p>Bring an existing lab up to a standard students can work in — without emptying the building.</p>
+                </div>
+            </article>
+            <article class="service-card">
+                <div class="thumb"><img src="img/lab6.jpg" alt="Hospital and campus furniture"></div>
+                <div class="body">
+                    <h3>Campus &amp; clinic</h3>
+                    <p>Libraries, ICT, home economics, cafeterias, and hospital equipment from the same workshop.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section band-white reveal">
+    <div class="wrap">
+        <div class="section-head">
+            <div>
+                <span class="kicker">Selected work</span>
+                <h2>Rooms we have already built.</h2>
+            </div>
+            <a class="btn btn-outline" href="project.html">Open the archive</a>
+        </div>
+        <div class="mosaic">
+            <a href="img/nbg5.webp" data-lightbox="home-work" data-title="Science laboratory"><img src="img/nbg5.webp" alt="Science laboratory"><span>Science laboratory</span></a>
+            <a href="img/int2.jpg" data-lightbox="home-work" data-title="Installed benches"><img src="img/int2.jpg" alt="Installed benches"><span>Installed benches</span></a>
+            <a href="img/spaces/ict-2.jpg" data-lightbox="home-work" data-title="ICT laboratory"><img src="img/spaces/ict-2.jpg" alt="ICT laboratory"><span>ICT laboratory</span></a>
+            <a href="img/nbg8.jpg" data-lightbox="home-work" data-title="Classroom laboratory"><img src="img/nbg8.jpg" alt="Classroom laboratory"><span>Teaching lab</span></a>
+            <a href="img/int15.jpg" data-lightbox="home-work" data-title="Computer laboratory"><img src="img/int15.jpg" alt="Computer laboratory"><span>Computer laboratory</span></a>
+            <a href="img/glass1.jpg" data-lightbox="home-work" data-title="Glassware"><img src="img/glass1.jpg" alt="Lab glassware"><span>Glassware</span></a>
+            <a href="img/int1.jpg" data-lightbox="home-work" data-title="Mobile lab table"><img src="img/int1.jpg" alt="Mobile lab table"><span>Mobile lab table</span></a>
+        </div>
+    </div>
+</section>
+
+<section class="section reveal" style="padding-top:0">
+    <div class="wrap">
+        <div class="split">
+            <div class="split-media">
+                <img src="img/nbg2.jpg" alt="Forjalab laboratory interior">
+            </div>
+            <div class="split-copy">
+                <span class="kicker">Why schools stay</span>
+                <h2>A safer room, without wasting the budget.</h2>
+                <p>We treat laboratory furniture as the foundation of curiosity — chemical-resistant, heavy enough to last, and laid out so a teacher can see every student. Then we make the money go further.</p>
+                <ul class="checklist">
+                    <li>Safe designs for wet chemistry and powered physics</li>
+                    <li>Free consultation before you commit to a drawing</li>
+                    <li>Manufacture in Lagos, installed by the people who built it</li>
+                    <li>Support after handover — not a vanishing supplier</li>
+                </ul>
             </div>
         </div>
     </div>
-    <!-- Carousel End -->
+</section>
 
-
-    <!-- Feature Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
-                            <i class="fa fa-user-check fa-2x text-primary"></i>
-                        </div>
-                        <h1 class="display-1 text-light mb-0">01</h1>
-                    </div>
-                    <h5>Safe Designs</h5>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
-                            <i class="fa fa-check fa-2x text-primary"></i>
-                        </div>
-                        <h1 class="display-1 text-light mb-0">02</h1>
-                    </div>
-                    <h5>Quality Products</h5>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
-                            <i class="fa fa-drafting-compass fa-2x text-primary"></i>
-                        </div>
-                        <h1 class="display-1 text-light mb-0">03</h1>
-                    </div>
-                    <h5>Free Consultation</h5>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
-                        <div class="d-flex align-items-center justify-content-center bg-light" style="width: 60px; height: 60px;">
-                            <i class="fa fa-headphones fa-2x text-primary"></i>
-                        </div>
-                        <h1 class="display-1 text-light mb-0">04</h1>
-                    </div>
-                    <h5>Customer Support</h5>
-                </div>
+<section class="section band-mist reveal">
+    <div class="wrap">
+        <div class="section-head">
+            <div>
+                <span class="kicker">From the people who use the rooms</span>
+                <h2>Schools, in their own words.</h2>
             </div>
+        </div>
+        <div class="quotes">
+            <blockquote class="quote">
+                <p>“Forjalab was instrumental in helping us set up and furnish our laboratory. They also have excellent customer support.”</p>
+                <footer>
+                    <img src="img/test2.jpg" alt="BAYTUL-ILM College">
+                    <div><strong>BAYTUL-ILM College, Lagos</strong><span>School project supervisor</span></div>
+                </footer>
+            </blockquote>
+            <blockquote class="quote">
+                <p>“We were supplied excellent ISO-certified equipment at friendly prices. The installation was top notch.”</p>
+                <footer>
+                    <img src="img/test1.jpg" alt="Living Standard Schools">
+                    <div><strong>Living Standard Schools, Ibafo</strong><span>The proprietor</span></div>
+                </footer>
+            </blockquote>
         </div>
     </div>
-    <!-- Feature Start -->
+</section>
 
-
-
-    <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container about px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/int2.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <div class="section-title text-start">
-                            <h1 class="display-5 mb-4">About Us</h1>
-                        </div>
-                        <p class="mb-4 pb-2">Forjalab Technologies is an indigenous company based in Lagos, Nigeria. We specialize in the Manufacture, Supply and Installation of Science Laboratory Furniture/Fittings, Chemicals (Reagents, etc), Lab wares (Glass, Plastic, etc.), and Equipment for all levels of Science, Technology and Education</p>
-                        <p>We render services in renovation and maintenance of existing Science Laboratories and many more.</p>
-                        <p> We also manufacture and install other educational furnishings such as classroom furniture, language laboratory, library furniture, computer laboratory, home economics laboratories and a whole lot of other school and office furniture.</p>
-                        
-                        <div class="row g-4 mb-4 pb-2">
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-users fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h2 class="text-primary mb-1" data-toggle="counter-up">67</h2>
-                                        <p class="fw-medium mb-0">Happy Clients</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-check fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-3">
-                                        <h2 class="text-primary mb-1" data-toggle="counter-up">42</h2>
-                                        <p class="fw-medium mb-0">Projects Done</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--<a href="" class="btn btn-primary py-3 px-5">Explore More</a>-->
-                    </div>
-                </div>
-            </div>
+<section class="cta-band band-dark reveal">
+    <div class="wrap">
+        <span class="kicker" style="color:#F3C6EC">Start with a conversation</span>
+        <h2>Tell us about the lab you want to open.</h2>
+        <p>Share the room, the subjects, and the budget. We will come back with a practical plan — not a generic quote.</p>
+        <div class="hero-actions" style="justify-content:center">
+            <a class="btn btn-primary" href="https://wa.link/xsimeu">WhatsApp a specialist</a>
+            <a class="btn btn-ghost" href="contact.html">Write to us</a>
         </div>
     </div>
-    <!-- About End -->
+</section>
 
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="section-title text-center">
-                <h1 class="display-5 mb-5">Our Services</h1>
+<footer class="site-footer">
+    <div class="wrap footer-grid">
+        <div>
+            <a class="brand" href="index.html"><img src="img/logo1.png" alt=""><span>Forjalab</span></a>
+            <p>Indigenous laboratory studio in Lagos. We design, manufacture, and install science spaces for schools across Nigeria.</p>
+        </div>
+        <div>
+            <h4>Spaces</h4>
+            <div class="footer-links">
+                <a href="spaces.html#chemistry">Chemistry</a>
+                <a href="spaces.html#physics">Physics</a>
+                <a href="spaces.html#ict">ICT</a>
+                <a href="spaces.html#library">Library</a>
             </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/int3.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Planning and Designing of Science laboratories</h4>
-                            <!--<p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>-->
-                            <a class="fw-medium" href="service.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/nbg6.jpeg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Manufacture, Supply and installation of science laboratory furniture & fittings</h4>
-                            <!--<p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>-->
-                            <a class="fw-medium" href="service.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/lab5.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Procurement of Science laboratory Equipments</h4>
-                            <!--<p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>-->
-                            <a class="fw-medium" href="service.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/lab4.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Supply of Science Laboratory Glass-wares, Plastic-wares and chemicals</h4>
-                            <!--<p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>-->
-                            <a class="fw-medium" href="service.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/lab6.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Supply of Hospital Equipments</h4>
-                            <!--<p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>-->
-                            <a class="fw-medium" href="service.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/nbg7.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Renovation and maintenance of existing science laboratories</h4>
-                            <!--<p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>-->
-                            <a class="fw-medium" href="service.html">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div>
+            <h4>Studio</h4>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="service.html">Services</a>
+                <a href="project.html">Work</a>
+                <a href="contact.html">Contact</a>
             </div>
+        </div>
+        <div>
+            <h4>Visit</h4>
+            <p>No 69 Lagos Road, Ikorodu, Lagos<br>Mon–Sat, 09:00–21:00</p>
+            <p><a href="tel:+2349157545966">+234 915 754 5966</a><br>
+            <a href="mailto:sales.forjalabtech@gmail.com">sales.forjalabtech@gmail.com</a></p>
         </div>
     </div>
-    <!-- Service End -->
-
-
-    <!-- Feature Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container feature px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 ps-lg-0">
-                        <div class="section-title text-start">
-                            <h1 class="display-5 mb-4">Why Choose Us</h1>
-                        </div>
-                        <p class="mb-4 pb-2">In Forjalab Technologies, Customer satisfaction is our priority. With over 5 years’ experience in this field, Our experienced design team listen carefully to your brief and offer practical advice to make the most of your budget.</p>
-                        <div class="row g-4">
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-check fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-2">Quality</p>
-                                        <h5 class="mb-0">Services</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-user-check fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-2">Safe</p>
-                                        <h5 class="mb-0">Products</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-drafting-compass fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-2">Free</p>
-                                        <h5 class="mb-0">Consultation</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
-                                        <i class="fa fa-headphones fa-2x text-primary"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-2">Customer</p>
-                                        <h5 class="mb-0">Support</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/nbg2.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="wrap legal">
+        <span>© 2026 Forjalab Technologies. All rights reserved.</span>
+        <span>Made in Lagos</span>
     </div>
-    <!-- Feature End -->
+</footer>
 
+<a class="wa-float" href="https://wa.link/xsimeu" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<a href="#" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- Testimonial Start -->
-    <!--<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="section-title text-center">
-                <h1 class="display-5 mb-5">Testimonial</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 90px; height: 90px;">
-                    <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 90px; height: 90px;">
-                    <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid bg-light p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
-                    <div class="testimonial-text text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Testimonial End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>No 69 Lagos road, Ikorodu, Lagos, Nigeria</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+234 915 754 5966</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+234 915 754 5964</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>sales.forjalabtech@gmail.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="index.html">Home</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="service.html">Our Services</a>
-                </div>
-
-            </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="index.html">forjalabtech.com</a>, All Right Reserved. 2022
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="js/main.js"></script>
 </body>
-
 </html>
